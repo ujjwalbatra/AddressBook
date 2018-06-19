@@ -13,12 +13,17 @@ import javafx.stage.Stage;
 public class AlertBox{
 
     private static Boolean answer;
+    private String title;
+    private String message;
 
-    public AlertBox(){
+    public AlertBox(String title, String message){
+
         this.answer = false;
+        this.message = message;
+        this.title = title;
     }
 
-    public boolean alert(String title, String message){
+    public boolean alert(){
         Stage alertWindow = new Stage();
         Label label;
         Button yes, no;

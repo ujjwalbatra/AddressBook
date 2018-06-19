@@ -156,8 +156,8 @@ public class Insert implements EventHandler<ActionEvent>{
 
     public void closeProgram() {
         boolean answer;
-        AlertBox alertBox = new AlertBox();
-        answer = alertBox.alert("Exit - AddressBook", "Are you sure you want to exit?");
+        AlertBox alertBox = new AlertBox("Exit - AddressBook", "Are you sure you want to exit?");
+        answer = alertBox.alert();
         if (answer)
             this.window.close();
 

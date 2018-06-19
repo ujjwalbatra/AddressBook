@@ -71,9 +71,9 @@ public class Main extends Application implements EventHandler<ActionEvent>{
     }
 
     public void closeProgram(){
-        AlertBox alertBox = new AlertBox();
+        AlertBox alertBox = new AlertBox("close - AddressBook", "Are you sure you want to close AddressBook?");
 
-        Boolean answer = alertBox.alert("close - AddressBook", "Are you sure you want to close AddressBook?");
+        Boolean answer = alertBox.alert();
 
         if (answer){
             this.window.close();
