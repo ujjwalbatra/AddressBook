@@ -145,7 +145,7 @@ public class Insert implements EventHandler<ActionEvent>{
                 ex.printStackTrace();
             }
 
-        } else if (event.getSource() == cancel) {
+        } else if (event.getSource() == this.cancel) {
             closeProgram();
             closeProcedure();
         }
