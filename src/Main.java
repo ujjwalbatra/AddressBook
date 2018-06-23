@@ -66,6 +66,9 @@ public class Main extends Application implements EventHandler<ActionEvent>{
         } else if (event.getSource() == this.insert){
             Insert insert = new Insert();
             insert.insert();
+        } else if (event.getSource() == this.search) {
+            Search search = new Search();
+            search.search();
         }
 
     }

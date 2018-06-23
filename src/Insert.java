@@ -129,7 +129,7 @@ public class Insert implements EventHandler<ActionEvent>{
                 Statement stmt = conn.createStatement();  // Allocate a 'Statement' object in the Connection
 
                 String sqlInsert = "insert into AddressBook.details (firstname, lastname, phone, addressline1, addressline2, city, state, zip, country)" // need a space
-                        + "values (\'" + this.firstName.getText() + "\',\'" + this.lastName.getText() + "\',\'" + this.phone.getText() + "\',\'" + this.addressLine1.getText() + "\',\'" + this.addressLine2.getText() + "\',\'" + this.city.getText() + "\',\'" + this.state.getText() + "\',\'" + this.zip.getText() + "\',\'" + this.country.getText() + "\')";
+                        + "values (\'" + this.firstName.getText() + "\',\'" + this.lastName.getText() + "\',\'" + this.phone.getText() + "\',\'" + this.addressLine1.getText() + "\',\'" + this.addressLine2.getText() + "\',\'" + this.city.getText() + "\',\'" + this.state.getText() + "\',\'" + this.zip.getText() + "\',\'" + this.country.getText() + "\');";
                 System.out.println("The SQL query is: " + sqlInsert);
 
                 int countInserted = stmt.executeUpdate(sqlInsert);
