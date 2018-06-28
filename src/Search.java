@@ -71,23 +71,25 @@ public class Search implements EventHandler<ActionEvent> {
             try {
                 Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/AddressBook", "root", "Ujjwal123"); // Allocate a database 'Connection' object
                 Statement stmt = conn.createStatement();  // Allocate a 'Statement' object in the Connection
-                String search ;
+                String search = null;
 
-                    if (this.details.getText() ==  (String) this.details.getText()){
-                        search = "SELECT *  FROM AddressBook.details WHERE AddressBook.details.phone = " + "\'" + this.details.getText() + "\' " +"or LOWER (AddressBook.details.firstname) = "+"\'%" + details.getText().toLowerCase() + "%\';";
-                    }
-                    else if (this.details.getText() ==   this.details.getText()){
-                        search = "SELECT *  FROM AddressBook.details WHERE AddressBook.details.id = "  + this.details.getText().toLowerCase() + ";";
-                    }
 
-                    System.out.println("The SQL query is: " + search);
+                try {
+                    double detail = Integer.parseInt(this.details.getText());
+                    search = "SELECT *  FROM AddressBook.details WHERE AddressBook.details.id = "  + detail + " OR AddressBook.details.phone  = "+ detail +";";
+                } catch (NumberFormatException e) {
+                    search = "SELECT *  FROM AddressBook.details WHERE LOWER (AddressBook.details.firstname) = "+"\'" + details.getText().toLowerCase() + "\';";
+                }
 
-                    ResultSet rset = stmt.executeQuery(search);
-                    rset.next();
+                System.out.println("The SQL query is: " + search);
 
-                    String output = "First Name = " + rset.getString("firstname") + "\nLast Name = " + rset.getString("lastname") + "\nPhone Number = " + rset.getString("phone")  + "\nAddress Line 1 = " + rset.getString("addressline1") + "\nAddress Line 2 = " + rset.getString("addressline2") + "\nCity = " + rset.getString("city") + "\nState = " + rset.getString("state") + "\nZip = " + rset.getString("zip") + "\nCountry = " + rset.getString("country");
+                ResultSet rset = stmt.executeQuery(search);
+                while (rset.next()) {
+                    System.out.println(rset.getRow());
+                    String output = "First Name = " + rset.getString("firstname") + "\nLast Name = " + rset.getString("lastname") + "\nPhone Number = " + rset.getString("phone") + "\nAddress Line 1 = " + rset.getString("addressline1") + "\nAddress Line 2 = " + rset.getString("addressline2") + "\nCity = " + rset.getString("city") + "\nState = " + rset.getString("state") + "\nZip = " + rset.getString("zip") + "\nCountry = " + rset.getString("country");
                     System.out.println(output);
-                    window.close();
+                }
+                window.close();
 
 
 

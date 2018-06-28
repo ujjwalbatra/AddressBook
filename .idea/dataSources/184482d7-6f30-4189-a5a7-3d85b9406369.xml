@@ -28,7 +28,7 @@
     </column>
     <column id="12" parent="8" name="phone">
       <Position>4</Position>
-      <DataType>char(13)|0</DataType>
+      <DataType>int(13)|0</DataType>
     </column>
     <column id="13" parent="8" name="addressline1">
       <Position>5</Position>

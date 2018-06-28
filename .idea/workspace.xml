@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AddressBook/sample/Controller.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/184482d7-6f30-4189-a5a7-3d85b9406369.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/184482d7-6f30-4189-a5a7-3d85b9406369.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Insert.java" afterPath="$PROJECT_DIR$/src/Insert.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Search.java" afterPath="$PROJECT_DIR$/src/Search.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -107,13 +104,15 @@
       <file leaf-file-name="Search.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Search.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="59" column="35" lean-forward="false" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+            <state relative-caret-position="318">
+              <caret line="86" column="37" lean-forward="false" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1529755031234" expanded="true" signature="2531:2735" ph="SELECT * FRO... details" />
-                <marker date="1529755031234" expanded="true" signature="2531:2737" ph="SELECT * FRO... details" />
-                <marker date="1529755031234" expanded="true" signature="2877:2943" ph="SELECT * FRO... details" />
+                <marker date="1530183239872" expanded="true" signature="2549:2615" ph="SELECT * FRO... details" />
+                <marker date="1530183239872" expanded="true" signature="2549:2662" ph="SELECT * FRO... details" />
+                <marker date="1530183239872" expanded="true" signature="2549:2663" ph="SELECT * FRO... details" />
+                <marker date="1530183239872" expanded="true" signature="2549:2674" ph="SELECT * FRO... details" />
+                <marker date="1530183239872" expanded="true" signature="2761:2888" ph="SELECT * FRO... details" />
               </folding>
             </state>
           </provider>
@@ -122,8 +121,8 @@
       <file leaf-file-name="Insert.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Insert.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="131" column="297" lean-forward="false" selection-start-line="131" selection-start-column="297" selection-end-line="131" selection-end-column="297" />
+            <state relative-caret-position="-4">
+              <caret line="111" column="0" lean-forward="true" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1529390480308" expanded="true" signature="4012:4282" ph="insert into AddressBook.details... " />
@@ -139,16 +138,6 @@
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchScene.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/MyAddressBook_in_JAVAFX/src/SearchScene.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="107" column="13" lean-forward="true" selection-start-line="67" selection-start-column="12" selection-end-line="107" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -436,7 +425,7 @@
       <workItem from="1529214010455" duration="5752000" />
       <workItem from="1529287562405" duration="1129000" />
       <workItem from="1529301871472" duration="5218000" />
-      <workItem from="1529323186741" duration="8170000" />
+      <workItem from="1529323186741" duration="12603000" />
     </task>
     <task id="LOCAL-00001" summary="Alert Box GUI in working. No finctionality added yet.">
       <created>1529216670475</created>
@@ -487,11 +476,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529383023461</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="initial commit">
+      <created>1529756602481</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1529756602481</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22792000" />
+    <option name="totallyTimeSpent" value="27225000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -515,11 +511,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299285" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299285" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25842696" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3299285" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25842696" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299285" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23870574" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10683761" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -587,10 +583,10 @@
       <path value="$PROJECT_DIR$/src/sample" />
     </ignored-roots>
     <MESSAGE value="Alert Box GUI in working. No finctionality added yet." />
-    <MESSAGE value="initial commit" />
     <MESSAGE value="Insert functionality complete." />
     <MESSAGE value="Insert complete!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Insert complete!" />
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -853,16 +849,16 @@
     </entry>
     <entry file="file://$USER_HOME$/MyAddressBook_in_JAVAFX/src/SearchScene.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="107" column="13" lean-forward="true" selection-start-line="67" selection-start-column="12" selection-end-line="107" selection-end-column="13" />
+        <state relative-caret-position="609">
+          <caret line="107" column="13" lean-forward="false" selection-start-line="67" selection-start-column="12" selection-end-line="107" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Insert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="131" column="297" lean-forward="false" selection-start-line="131" selection-start-column="297" selection-end-line="131" selection-end-column="297" />
+        <state relative-caret-position="-4">
+          <caret line="111" column="0" lean-forward="true" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1529390480308" expanded="true" signature="4012:4282" ph="insert into AddressBook.details... " />
@@ -881,13 +877,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Search.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="59" column="35" lean-forward="false" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+        <state relative-caret-position="318">
+          <caret line="86" column="37" lean-forward="false" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1529755031234" expanded="true" signature="2531:2735" ph="SELECT * FRO... details" />
-            <marker date="1529755031234" expanded="true" signature="2531:2737" ph="SELECT * FRO... details" />
-            <marker date="1529755031234" expanded="true" signature="2877:2943" ph="SELECT * FRO... details" />
+            <marker date="1530183239872" expanded="true" signature="2549:2615" ph="SELECT * FRO... details" />
+            <marker date="1530183239872" expanded="true" signature="2549:2662" ph="SELECT * FRO... details" />
+            <marker date="1530183239872" expanded="true" signature="2549:2663" ph="SELECT * FRO... details" />
+            <marker date="1530183239872" expanded="true" signature="2549:2674" ph="SELECT * FRO... details" />
+            <marker date="1530183239872" expanded="true" signature="2761:2888" ph="SELECT * FRO... details" />
           </folding>
         </state>
       </provider>
