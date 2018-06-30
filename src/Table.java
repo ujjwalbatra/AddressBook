@@ -10,7 +10,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
@@ -31,9 +33,6 @@ public class Table  {
 
         final Label label = new Label("Address Book");
         label.setFont(new Font("Arial", 20));
-
-        this.table.setEditable(true);
-
 
 //                Table column added dynamically.
         for (int i = 0; i < rset.getMetaData().getColumnCount();  i++){
@@ -63,8 +62,7 @@ public class Table  {
             table.setItems(data);
         }
 
-
-        final VBox vbox = new VBox();
+        VBox vbox = new VBox();
         vbox.setSpacing(5);
         vbox.setPadding(new Insets(10, 10, 10, 10));
         vbox.setAlignment(Pos.CENTER);

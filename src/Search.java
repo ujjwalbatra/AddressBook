@@ -23,7 +23,7 @@ public class Search implements EventHandler<ActionEvent> {
     private Stage window;
     private Button search;
     private Button cancel;
-    private TextField details; // text field to take input from user, which will be used for search querry
+    private TextField details; // text field to take input from user, which will be used for search query
     final private Label heading;
 
 
@@ -35,8 +35,6 @@ public class Search implements EventHandler<ActionEvent> {
         this.cancel = new Button("Cancel");
         this.details = new TextField();
         this.heading = new Label("Search using ID, first name or phone number");
-
-
 
     }
 
@@ -93,7 +91,6 @@ public class Search implements EventHandler<ActionEvent> {
                 Table table = new Table();
                 table.generateTable(rset);
                 window.close();
-
 
 
             } catch (Exception ex) {
