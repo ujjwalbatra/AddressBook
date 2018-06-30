@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/184482d7-6f30-4189-a5a7-3d85b9406369.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/184482d7-6f30-4189-a5a7-3d85b9406369.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Table.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Search.java" afterPath="$PROJECT_DIR$/src/Search.java" />
     </list>
@@ -92,7 +92,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
+            <state relative-caret-position="450">
               <caret line="55" column="25" lean-forward="false" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -101,18 +101,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Search.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Search.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Search.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="86" column="37" lean-forward="false" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
+            <state relative-caret-position="602">
+              <caret line="58" column="48" lean-forward="false" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1530183239872" expanded="true" signature="2549:2615" ph="SELECT * FRO... details" />
-                <marker date="1530183239872" expanded="true" signature="2549:2662" ph="SELECT * FRO... details" />
-                <marker date="1530183239872" expanded="true" signature="2549:2663" ph="SELECT * FRO... details" />
-                <marker date="1530183239872" expanded="true" signature="2549:2674" ph="SELECT * FRO... details" />
-                <marker date="1530183239872" expanded="true" signature="2761:2888" ph="SELECT * FRO... details" />
+                <marker date="1530348436599" expanded="true" signature="2766:2832" ph="SELECT * FRO... details" />
+                <marker date="1530348436599" expanded="true" signature="2766:2879" ph="SELECT * FRO... details" />
+                <marker date="1530348436599" expanded="true" signature="2766:2880" ph="SELECT * FRO... details" />
+                <marker date="1530348436599" expanded="true" signature="2766:2891" ph="SELECT * FRO... details" />
+                <marker date="1530348436599" expanded="true" signature="2978:3105" ph="SELECT * FRO... details" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Table.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Table.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="373">
+              <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,8 +133,8 @@
       <file leaf-file-name="Insert.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Insert.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4">
-              <caret line="111" column="0" lean-forward="true" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1529390480308" expanded="true" signature="4012:4282" ph="insert into AddressBook.details... " />
@@ -174,7 +186,9 @@
         <option value="$PROJECT_DIR$/src/AlertBox.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Insert.java" />
+        <option value="$PROJECT_DIR$/src/TableView.java" />
         <option value="$PROJECT_DIR$/src/Search.java" />
+        <option value="$PROJECT_DIR$/src/Table.java" />
       </list>
     </option>
   </component>
@@ -425,7 +439,7 @@
       <workItem from="1529214010455" duration="5752000" />
       <workItem from="1529287562405" duration="1129000" />
       <workItem from="1529301871472" duration="5218000" />
-      <workItem from="1529323186741" duration="12603000" />
+      <workItem from="1529323186741" duration="18730000" />
     </task>
     <task id="LOCAL-00001" summary="Alert Box GUI in working. No finctionality added yet.">
       <created>1529216670475</created>
@@ -483,11 +497,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529756602481</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="search function working now on commandline!">
+      <created>1530183820744</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1530183820744</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27225000" />
+    <option name="totallyTimeSpent" value="33352000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -586,7 +607,8 @@
     <MESSAGE value="Insert functionality complete." />
     <MESSAGE value="Insert complete!" />
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="search function working now on commandline!" />
+    <option name="LAST_COMMIT_MESSAGE" value="search function working now on commandline!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -837,34 +859,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="55" column="25" lean-forward="false" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/MyAddressBook_in_JAVAFX/src/SearchScene.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="609">
           <caret line="107" column="13" lean-forward="false" selection-start-line="67" selection-start-column="12" selection-end-line="107" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Insert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="111" column="0" lean-forward="true" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1529390480308" expanded="true" signature="4012:4282" ph="insert into AddressBook.details... " />
-            <marker date="1529390480308" expanded="true" signature="4012:4458" ph="insert into AddressBook.details... " />
-            <marker date="1529390480308" expanded="true" signature="4012:4497" ph="insert into AddressBook.details... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -875,17 +874,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Search.java">
+    <entry file="file://$PROJECT_DIR$/src/Insert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="86" column="37" lean-forward="false" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
+        <state relative-caret-position="270">
+          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1530183239872" expanded="true" signature="2549:2615" ph="SELECT * FRO... details" />
-            <marker date="1530183239872" expanded="true" signature="2549:2662" ph="SELECT * FRO... details" />
-            <marker date="1530183239872" expanded="true" signature="2549:2663" ph="SELECT * FRO... details" />
-            <marker date="1530183239872" expanded="true" signature="2549:2674" ph="SELECT * FRO... details" />
-            <marker date="1530183239872" expanded="true" signature="2761:2888" ph="SELECT * FRO... details" />
+            <marker date="1529390480308" expanded="true" signature="4012:4282" ph="insert into AddressBook.details... " />
+            <marker date="1529390480308" expanded="true" signature="4012:4458" ph="insert into AddressBook.details... " />
+            <marker date="1529390480308" expanded="true" signature="4012:4497" ph="insert into AddressBook.details... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TableView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="55" column="25" lean-forward="false" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Search.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="58" column="48" lean-forward="false" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1530348436599" expanded="true" signature="2766:2832" ph="SELECT * FRO... details" />
+            <marker date="1530348436599" expanded="true" signature="2766:2879" ph="SELECT * FRO... details" />
+            <marker date="1530348436599" expanded="true" signature="2766:2880" ph="SELECT * FRO... details" />
+            <marker date="1530348436599" expanded="true" signature="2766:2891" ph="SELECT * FRO... details" />
+            <marker date="1530348436599" expanded="true" signature="2978:3105" ph="SELECT * FRO... details" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

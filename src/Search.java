@@ -1,13 +1,17 @@
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.value.ObservableValue;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import javafx.util.Callback;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -20,16 +24,18 @@ public class Search implements EventHandler<ActionEvent> {
     private Button search;
     private Button cancel;
     private TextField details; // text field to take input from user, which will be used for search querry
-    private Label heading;
+    final private Label heading;
+
+
 
     public Search(){
 
         this.window = new Stage();
-
         this.search = new Button("Ok");
         this.cancel = new Button("Cancel");
         this.details = new TextField();
         this.heading = new Label("Search using ID, first name or phone number");
+
 
 
     }
@@ -50,7 +56,7 @@ public class Search implements EventHandler<ActionEvent> {
 
         VBox vBox = new VBox(10);
         vBox.getChildren().addAll(this.heading, this.details, hBox);
-
+        vBox.setPadding(new Insets(10, 10, 10,10));
         this.window.setScene(new Scene(vBox, 300, 150));
         this.window.show();
 
@@ -84,11 +90,8 @@ public class Search implements EventHandler<ActionEvent> {
                 System.out.println("The SQL query is: " + search);
 
                 ResultSet rset = stmt.executeQuery(search);
-                while (rset.next()) {
-                    System.out.println(rset.getRow());
-                    String output = "First Name = " + rset.getString("firstname") + "\nLast Name = " + rset.getString("lastname") + "\nPhone Number = " + rset.getString("phone") + "\nAddress Line 1 = " + rset.getString("addressline1") + "\nAddress Line 2 = " + rset.getString("addressline2") + "\nCity = " + rset.getString("city") + "\nState = " + rset.getString("state") + "\nZip = " + rset.getString("zip") + "\nCountry = " + rset.getString("country");
-                    System.out.println(output);
-                }
+                Table table = new Table();
+                table.generateTable(rset);
                 window.close();
 
 
