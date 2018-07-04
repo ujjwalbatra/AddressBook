@@ -75,6 +75,9 @@ public class MainUI extends Application implements EventHandler<ActionEvent>{
         } else if (event.getSource() == update) {
             UpdateSearchDeleteUI updateSearchDeleteUI = new UpdateSearchDeleteUI("Update - AddressBook", "Enter ID  to update", "Update");
             updateSearchDeleteUI.generateUI();
+        } else if (event.getSource() == exportJson) {
+            AddressBook addressBook = new AddressBook();
+            addressBook.writeJSON();
         }
 
     }
