@@ -10,7 +10,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class Main extends Application implements EventHandler<ActionEvent>{
+public class MainUI extends Application implements EventHandler<ActionEvent>{
     private Button insert;
     private Button search;
     private Button update;
@@ -64,21 +64,23 @@ public class Main extends Application implements EventHandler<ActionEvent>{
         if (event.getSource() == this.exit){
             closeProgram();
         } else if (event.getSource() == this.insert){
-            Insert insert = new Insert();
-            insert.insert();
+            UpdateAndInsertUI updateAndInsertUI = new UpdateAndInsertUI("Insert");
+            updateAndInsertUI.updateInsertUI();
         } else if (event.getSource() == this.search) {
-            Search search = new Search();
-            search.search();
+            UpdateSearchDeleteUI updateSearchDeleteUI = new UpdateSearchDeleteUI("Search - AddressBook", "Enter ID, first name or phone number to search", "Search");
+            updateSearchDeleteUI.generateUI();
         } else if (event.getSource() == this.delete) {
-            UpdateDeleteUI updateDeleteUI = new UpdateDeleteUI("Delete - AddressBook", "Enter ID to delete entry", "Delete");
-            updateDeleteUI.generateUI();
+            UpdateSearchDeleteUI updateSearchDeleteUI = new UpdateSearchDeleteUI("Delete - AddressBook", "Enter ID to delete entry", "Delete");
+            updateSearchDeleteUI.generateUI();
+        } else if (event.getSource() == update) {
+            UpdateSearchDeleteUI updateSearchDeleteUI = new UpdateSearchDeleteUI("Update - AddressBook", "Enter ID  to update", "Update");
+            updateSearchDeleteUI.generateUI();
         }
 
     }
 
     public void closeProgram(){
         AlertBox alertBox = new AlertBox("close - AddressBook", "Are you sure you want to close AddressBook?");
-
         Boolean answer = alertBox.alert();
 
         if (answer){

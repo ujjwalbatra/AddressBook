@@ -8,14 +8,14 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class UpdateDeleteUI {
+public class UpdateSearchDeleteUI {
     private Stage window;
     private Button button;
     private Button cancel;
     private TextField details; // text field to take input from user, which will be used for search query
     private Label heading;
 
-    public UpdateDeleteUI(String title, String heading, String button) {
+    public UpdateSearchDeleteUI(String title, String heading, String button) {
         this.window = new Stage();
         this.button = new Button(button);
         this.heading = new Label(heading);
@@ -39,9 +39,10 @@ public class UpdateDeleteUI {
         });
 
         this.button.setOnAction(event -> {
-            UpdateDelete updateDelete = new UpdateDelete(details.getText());
-            if (button.getText().toLowerCase().equals("update"))    updateDelete.updateDB();
-            else updateDelete.DeleteFromDB();
+            AddressBook addressBook = new AddressBook(details.getText());
+            if (button.getText().toLowerCase().equals("update")) addressBook.updateDB();
+            else if (button.getText().toLowerCase().equals("delete")) addressBook.DeleteFromDB();
+            else if (button.getText().toLowerCase().equals("search")) addressBook.search();
             this.details.clear();
             this.window.close();
         });
