@@ -56,7 +56,7 @@ public class AddressBook {
 
             int countInserted = stmt.executeUpdate(sqlDelete);
 
-            System.out.println(countInserted + " records inserted.\n");
+            System.out.println(countInserted + " records deleted.\n");
 
         } catch (SQLException ex) {
             ex.printStackTrace();
